@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+$color-white: white;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/lord.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 2;
+    width: 40%;
+    img {
+        width: 70%;
+    }
+}
+
+main {
+    display: flex;
+    min-width: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    margin: 0 10px;
+    background-color: $color-white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.8);
+
+    div {
+        &:nth-child(2) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .start {
+        button {
+            padding: 5px 10px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(143, 77, 143);
+            color: $color-white;
+            transition: 0.5s;
+            border-radius: 5px;
+            &:hover {
+                background-color: rgb(99, 48, 99);
+            }
+        }
+    }
+
+    .answers {
+        width: 100%;
+        h1 {
+            text-align: center;
+            font-size: 1.7rem;
+            margin-bottom: 30px;
+            color: rgb(82, 82, 82);
+        }
+
+        > div {
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+
+            button {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        button {
+            &.incorrect {
+                background: rgb(253, 195, 186);
+                border: 1px solid red;
+                &:hover{
+                    background: rgb(250, 183, 172);
+                }
+                color: red;
+            }
+
+            &.correct {
+                background: rgb(45, 208, 145);
+                border: 1px solid rgb(23, 182, 121);
+                &:hover{
+                    background: rgb(37, 192, 132);
+                }
+            }
+            background-color: rgb(60, 145, 243);
+            border: 1px solid black;
+            color: $color-white;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: .2s;
+            &:hover{
+                background-color: rgb(50, 128, 218);
+            }
+        }
+    }
+
+    .next {
+        button {
+            padding: 5px 10px;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(143, 77, 143);
+            color: $color-white;
+            transition: 0.5s;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 833px) {
+    .logo {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        .answers {
+            #asking {
+                font-size: 1.4rem;
+            }
+            > div {
+                button {
+                    &:first-child {
+                        margin-right: 0px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                flex-direction: column;
+            }
+        }
+    }
+}

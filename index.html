@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./sass/styles.css" />
+        <title>quiz app</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="logo">
+                <img src="./images/logo.png" alt="" />
+            </div>
+            <main>
+                <div class="start">
+                    <button>Start</button>
+                </div>
+
+                <div class="answers hide">
+                    <h1 id="asking">set the question</h1>
+                    <div>
+                        <button class="btn">question</button>
+                        <button class="btn">question</button>
+                    </div>
+                    <div>
+                        <button class="btn">question</button>
+                        <button class="btn">question</button>
+                    </div>
+                </div>
+                <div class="next hide">
+                    <button>Next</button>
+                </div>
+            </main>
+            <div class="overlay"></div>
+        </div>
+        <script src="./public/bundle.js" type="module"></script>
+    </body>
+</html>

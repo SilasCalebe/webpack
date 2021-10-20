@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/lord.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+  z-index: 2;
+  width: 40%;
+}
+
+.logo img {
+  width: 70%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  margin: 0 10px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.8);
+}
+
+main div:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+main .start button {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #8f4d8f;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+main .start button:hover {
+  background-color: #633063;
+}
+
+main .answers {
+  width: 100%;
+}
+
+main .answers h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  color: #525252;
+}
+
+main .answers > div {
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .answers div:first-child {
+  margin-bottom: 10px;
+}
+
+main .answers div button:first-child {
+  margin-right: 10px;
+}
+
+main .answers button {
+  background-color: #3c91f3;
+  border: 1px solid black;
+  color: white;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+main .answers button.incorrect {
+  background: #fdc3ba;
+  border: 1px solid red;
+  color: red;
+}
+
+main .answers button.incorrect:hover {
+  background: #fab7ac;
+}
+
+main .answers button.correct {
+  background: #2dd091;
+  border: 1px solid #17b679;
+}
+
+main .answers button.correct:hover {
+  background: #25c084;
+}
+
+main .answers button:hover {
+  background-color: #3280da;
+}
+
+main .next button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  background-color: #8f4d8f;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 833px) {
+  .logo {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .logo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .answers #asking {
+    font-size: 1.4rem;
+  }
+  main .answers > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .answers > div button:first-child {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
